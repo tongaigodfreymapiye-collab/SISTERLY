@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 330 38% 98%;
+    --foreground: 316 48% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 231 28% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 231 28% 25%;
+
+    --primary: 324 68% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 340 72% 91%;
+    --secondary-foreground: 231 28% 25%;
+
+    --muted: 340 30% 95%;
+    --muted-foreground: 231 15% 45%;
+
+    --accent: 270 38% 68%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 340 25% 90%;
+    --input: 340 25% 90%;
+    --ring: 238 66% 58%;
+
+    --radius: 1rem;
+
+    /* SISTERLY Brand Colors */
+    --blush-rose: 337 58% 68%;
+    --soft-lavender: 282 35% 72%;
+    --petal-pink: 337 72% 94%;
+    --deep-plum: 316 48% 20%;
+    --royal-blue: 324 68% 38%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(337 72% 95%) 0%, hsl(285 48% 94%) 50%, hsl(330 65% 97%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(340 72% 97%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(337 58% 68%) 0%, hsl(282 35% 72%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(316 65% 27%) 0%, hsl(324 68% 43%) 100%);
+    --gradient-fertility: linear-gradient(135deg, hsl(270 38% 88%) 0%, hsl(270 38% 78%) 100%);
+    --gradient-pregnancy: linear-gradient(135deg, hsl(5 52% 86%) 0%, hsl(270 38% 82%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(270 38% 68% / 0.15);
+    --shadow-card: 0 2px 12px -2px hsl(231 28% 25% / 0.08);
+    --shadow-elevated: 0 8px 30px -6px hsl(270 38% 68% / 0.2);
+    --shadow-glow: 0 0 30px -5px hsl(5 52% 76% / 0.3);
+
+    --sidebar-background: 340 30% 98%;
+    --sidebar-foreground: 231 28% 25%;
+    --sidebar-primary: 231 28% 25%;
+    --sidebar-primary-foreground: 340 72% 91%;
+    --sidebar-accent: 340 30% 95%;
+    --sidebar-accent-foreground: 231 28% 25%;
+    --sidebar-border: 340 25% 90%;
+    --sidebar-ring: 238 66% 58%;
+  }
+
+  .dark {
+    --background: 231 35% 8%;
+    --foreground: 340 72% 91%;
+    --card: 231 30% 12%;
+    --card-foreground: 340 72% 91%;
+    --popover: 231 30% 12%;
+    --popover-foreground: 340 72% 91%;
+    --primary: 340 72% 91%;
+    --primary-foreground: 231 28% 25%;
+    --secondary: 231 25% 18%;
+    --secondary-foreground: 340 72% 91%;
+    --muted: 231 25% 18%;
+    --muted-foreground: 340 30% 70%;
+    --accent: 270 38% 68%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 231 25% 18%;
+    --input: 231 25% 18%;
+    --ring: 238 66% 58%;
+    --sidebar-background: 231 35% 8%;
+    --sidebar-foreground: 340 72% 91%;
+    --sidebar-primary: 340 72% 91%;
+    --sidebar-primary-foreground: 231 28% 25%;
+    --sidebar-accent: 231 25% 18%;
+    --sidebar-accent-foreground: 340 72% 91%;
+    --sidebar-border: 231 25% 18%;
+    --sidebar-ring: 238 66% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background-image: var(--gradient-hero);
+  }
+  .gradient-card {
+    background-image: var(--gradient-card);
+  }
+  .gradient-accent {
+    background-image: var(--gradient-accent);
+  }
+  .gradient-cta {
+    background-image: var(--gradient-cta);
+  }
+  .gradient-fertility {
+    background-image: var(--gradient-fertility);
+  }
+  .gradient-pregnancy {
+    background-image: var(--gradient-pregnancy);
+  }
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/40;
+  }
+}
+
+
+/* SISTERLY womb illustration: gentle, decorative motion */
+.womb-scene {
+  position: relative;
+  width: min(100%, 440px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+.womb-scene-compact { width: min(100%, 350px); }
+.womb-glow {
+  position: absolute; inset: 16%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,.9) 0%, rgba(239,196,222,.55) 40%, rgba(174,142,207,.08) 72%, transparent 74%);
+  filter: blur(3px);
+  animation: womb-breathe 5s ease-in-out infinite;
+}
+.womb-svg {
+  position: relative; z-index: 2; width: 86%; height: 86%;
+  filter: drop-shadow(0 18px 24px rgba(116,75,130,.18));
+  animation: womb-float 6s ease-in-out infinite;
+  transform-origin: 50% 55%;
+}
+.womb-orbit {
+  position: absolute; z-index: 1; border: 1px solid rgba(174,142,207,.35);
+  border-radius: 50%; width: 82%; height: 82%;
+}
+.orbit-one { transform: rotate(-24deg) scaleY(.72); animation: womb-orbit 18s linear infinite; }
+.orbit-two { width: 95%; height: 95%; transform: rotate(42deg) scaleY(.74); border-style: dashed; opacity: .55; animation: womb-orbit 28s linear infinite reverse; }
+.womb-heart {
+  position: absolute; z-index: 3; right: 16%; top: 19%;
+  color: #D88EAF; background: rgba(255,255,255,.86); border-radius: 50%;
+  width: 42px; height: 42px; display: grid; place-items: center;
+  box-shadow: 0 8px 24px rgba(155,104,157,.2);
+  animation: womb-heartbeat 2.2s ease-in-out infinite;
+}
+.womb-heart svg { width: 19px; height: 19px; }
+.womb-sparkle { position: absolute; z-index: 3; color: #A98ACD; animation: womb-twinkle 3.2s ease-in-out infinite; }
+.womb-sparkle svg { width: 22px; height: 22px; }
+.sparkle-a { left: 13%; top: 29%; }
+.sparkle-b { right: 17%; bottom: 24%; animation-delay: 1.3s; }
+.womb-caption {
+  position: absolute; z-index: 4; bottom: 3%; left: 50%; transform: translateX(-50%);
+  width: max-content; max-width: 90%; text-align: center;
+  font-size: 11px; letter-spacing: .04em; color: #685477;
+  background: rgba(255,255,255,.72); backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,.8); border-radius: 999px; padding: 8px 14px;
+}
+@keyframes womb-breathe { 0%,100% { transform: scale(.94); opacity: .72; } 50% { transform: scale(1.07); opacity: 1; } }
+@keyframes womb-float { 0%,100% { transform: translateY(3px) scale(.985); } 50% { transform: translateY(-9px) scale(1.015); } }
+@keyframes womb-orbit { from { rotate: 0deg; } to { rotate: 360deg; } }
+@keyframes womb-heartbeat { 0%,100% { transform: scale(1); } 12% { transform: scale(1.13); } 24% { transform: scale(1); } 36% { transform: scale(1.09); } 48% { transform: scale(1); } }
+@keyframes womb-twinkle { 0%,100% { opacity: .45; transform: scale(.82) rotate(-8deg); } 50% { opacity: 1; transform: scale(1.14) rotate(10deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .womb-scene *, .womb-scene *::before { animation: none !important; }
+}

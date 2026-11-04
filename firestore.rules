@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function ownsExisting() { return signedIn() && resource.data.owner_uid == request.auth.uid; }
+
+    // User-owned application records.
+    match /{collection}/{recordId} {
+      allow create: if signedIn() && request.resource.data.owner_uid == request.auth.uid;
+      allow read, delete: if ownsExisting();
+      allow update: if ownsExisting() && request.resource.data.owner_uid == request.auth.uid;
+    }
+
+    // Device tokens used by scheduled Firebase Cloud Messaging reminders.
+    match /users/{userId}/devices/{deviceId} {
+      allow read, write, delete: if signedIn() && request.auth.uid == userId;
+    }
+  }
+}

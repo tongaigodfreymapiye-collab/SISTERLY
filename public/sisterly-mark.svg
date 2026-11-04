@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title">
+<title id="title">SISTERLY twin-profile S emblem</title>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8E145C"/><stop offset=".55" stop-color="#C63F83"/><stop offset="1" stop-color="#E99BB7"/></linearGradient>
+ <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF4F7"/><stop offset=".5" stop-color="#F7C8D9"/><stop offset="1" stop-color="#E8A0BD"/></linearGradient>
+</defs>
+<circle cx="120" cy="120" r="112" fill="url(#bg)"/>
+<circle cx="120" cy="120" r="105" fill="none" stroke="#F8D9E5" stroke-width="2" opacity=".8"/>
+<!-- flowing S-shaped ribbon -->
+<path d="M171 35 C126 13 67 40 65 83 C63 111 92 119 123 129 C159 141 179 159 163 190 C148 219 99 221 69 198 C101 209 139 193 140 169 C141 150 119 143 89 133 C48 119 40 88 61 58 C83 26 134 17 171 35Z" fill="url(#ribbon)"/>
+<!-- rear profile -->
+<path d="M139 48 C161 48 177 65 177 86 C177 99 170 109 159 116 L163 128 L145 125 C135 133 119 134 106 128 C118 118 125 104 125 88 C125 70 130 57 139 48Z" fill="#5B174D"/>
+<path d="M151 67 C143 74 142 86 149 94 C153 99 160 101 166 99 C162 105 154 109 145 106 C134 102 129 90 132 78 C135 67 144 61 151 67Z" fill="#FFF1F5"/>
+<!-- front profile -->
+<path d="M91 91 C111 88 127 101 127 120 C127 132 120 142 109 148 L114 159 L97 155 C87 163 72 162 61 155 C73 146 78 135 77 121 C76 107 81 97 91 91Z" fill="#4A1244"/>
+<path d="M96 107 C87 113 87 126 94 133 C98 137 104 139 110 136 C106 144 97 147 89 143 C78 137 76 124 81 115 C85 108 91 105 96 107Z" fill="#FFF1F5"/>
+<!-- heart -->
+<path d="M120 180 C108 166 88 175 93 190 C97 201 111 210 120 218 C129 210 143 201 147 190 C152 175 132 166 120 180Z" fill="#FFF5F7" stroke="#E9A7C1" stroke-width="3"/>
+</svg>

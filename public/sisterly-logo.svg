@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 150" role="img" aria-labelledby="title">
+<title id="title">SISTERLY — Your Women’s Health Companion</title>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8E145C"/><stop offset=".55" stop-color="#C63F83"/><stop offset="1" stop-color="#E99BB7"/></linearGradient></defs>
+<circle cx="75" cy="75" r="68" fill="url(#g)"/>
+<path d="M103 25 C76 12 39 29 38 55 C37 72 56 79 75 85 C98 94 110 105 100 124 C90 141 59 141 40 128 C60 134 83 124 84 109 C85 97 71 93 52 86 C26 77 21 58 35 39 C49 19 81 14 103 25Z" fill="#FFF0F5"/>
+<path d="M84 36 C101 36 113 49 113 64 C113 74 108 81 99 87 L102 96 L88 93 C80 99 68 99 59 94 C68 86 73 76 73 64 C73 51 77 41 84 36Z" fill="#5B174D"/>
+<path d="M56 61 C71 59 83 69 83 83 C83 92 78 99 69 104 L73 112 L60 109 C52 115 41 114 33 109 C42 102 46 94 45 83 C45 73 49 65 56 61Z" fill="#4A1244"/>
+<path d="M74 119 C65 108 50 115 54 126 C57 134 68 141 74 146 C80 141 91 134 94 126 C98 115 83 108 74 119Z" fill="#FFF5F7"/>
+<text x="165" y="82" font-family="Georgia,serif" font-size="65" font-weight="bold" letter-spacing="2" fill="#541443">SISTERLY</text>
+<text x="168" y="116" font-family="Arial,sans-serif" font-size="22" fill="#71365F">Your Women’s Health Companion</text>
+</svg>
